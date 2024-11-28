@@ -30,3 +30,22 @@ Run the script with the following parameters:
 ```bash
 create_odoo_module <module_name> <module_path>
 ```
+
+---
+
+## Output
+
+The script will generate the following structure:
+
+```
+<module_path>/<module_name>/
+├── __init__.py
+├── __manifest__.py
+├── models/
+│   ├── __init__.py
+│   └── <module_name>.py
+├── views/
+│   └── <module_name>.xml
+└── security/
+    └── ir.model.access.csv
+```
